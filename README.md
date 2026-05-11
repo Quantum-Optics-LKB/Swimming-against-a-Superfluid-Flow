@@ -12,10 +12,8 @@ This dataset contains numerical and experimental data used to generate the figur
 
 #### **Figures and Data Sources**
 
--   **Fig1**: Data from `07191910`
--   **Fig2**: Data from `09061965`
--   **Fig3**: Data from `09101636`
--   **Fig4**: Data from `spectral_analysis`
+-   **Propagation z-axis scan**: Data from `10181300`
+-   **Mach number scan**: Data from `08301817`
 
 #### **Field Data**
 
@@ -36,8 +34,3 @@ The `field.npy` files contain 4D NumPy arrays with shape `(i, j, Ny, Nx)`, where
 
 The dataset also includes various derived quantities, such as energy distributions and velocity fields.
 
-#### **Spectral Analysis and Interferograms**
-
-An exception is the dataset related to **Figure 4**, which contains `.tiff` images representing raw interferograms. The field must be reconstructed from these raw data. The folder also includes correlation curves and energy spectra.
-
-This dataset is openly available for further analysis and verification.
