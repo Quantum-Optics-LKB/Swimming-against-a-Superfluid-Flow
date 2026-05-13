@@ -16,7 +16,7 @@ from matplotlib import colors, patches
 import scipy as sp
 from scipy.signal import detrend
 from skimage.restoration import unwrap_phase
-# from cmcrameri import cm
+from cmcrameri import cm
 
 # import cupy as cp
 from scipy.signal import correlate2d
@@ -541,10 +541,10 @@ def fish_plot(scan: str, plot: bool = False):
         plot (bool, optional): Whether to plot. Defaults to False.
     """
     print("Loading data fields...")
-    fields = np.load(f"{scan}/field.npy")
+    fields = np.load(f"{scan}/field_fluid.npy")
 
     print("Loading data fields ref...")
-    fields_ref = np.load(f"{scan}/field_ref.npy")
+    fields_ref = np.load(f"{scan}/field_fluid_ref.npy")
 
     kx_fluid = np.load(f"{scan}/kx_fluid.npy")
     cs = np.load(f"{scan}/cs_quench.npy")
